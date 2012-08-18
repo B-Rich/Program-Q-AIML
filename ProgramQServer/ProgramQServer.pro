@@ -1,0 +1,14 @@
+TEMPLATE	= app
+LANGUAGE	= C++
+CONFIG	    += warn_off release console
+INCLUDEPATH += . include
+QT          += xml network
+HEADERS	    += include/mymaindialog.h include/aimlparser.h include/clickablelabel.h
+SOURCES	    += src/main.cpp src/mymaindialog.cpp src/aimlparser.cpp src/clickablelabel.cpp
+FORMS	     = ui/aimlsetdialog.ui ui/maindialog.ui
+DEPENDPATH  += include src ui
+UI_DIR      = tmp
+MOC_DIR     = tmp
+OBJECTS_DIR = tmp
+RC_FILE     = ProgramQ.rc
+RESOURCES   = ProgramQ.qrc

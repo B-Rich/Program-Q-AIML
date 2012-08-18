@@ -1,0 +1,24 @@
+<vars>
+ <set name="aimlpath" >D:/workspace/ProgramQNew/ProgramQServer/aiml_set/Islamic Bot</set>
+ <set name="application" >internet</set>
+ <set name="browser" ></set>
+ <set name="father" >hammadi</set>
+ <set name="fifth" >5 + 5</set>
+ <set name="fourth" >=5+5</set>
+ <set name="he" >Mohammed</set>
+ <set name="it" >quran</set>
+ <set name="last" ></set>
+ <set name="location" ></set>
+ <set name="name" ></set>
+ <set name="oldtopic" >=5+5</set>
+ <set name="personality" >polite</set>
+ <set name="second" >quran</set>
+ <set name="seventh" ></set>
+ <set name="sixth" ></set>
+ <set name="speak" >yes</set>
+ <set name="third" >dssd</set>
+ <set name="top" >quran</set>
+ <set name="topic" >quran</set>
+ <set name="tospeak" >Looking on the internethttp://www.google.com/search?q=+houssem is not installed</set>
+ <set name="url" >http://www.google.com/search?q=+houssem</set>
+</vars>

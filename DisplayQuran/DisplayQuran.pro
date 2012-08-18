@@ -1,0 +1,10 @@
+TEMPLATE	= app
+LANGUAGE	= C++
+CONFIG	+= warn_off release
+SOURCES	+= src/main.cpp
+DEPENDPATH  += src
+UI_DIR      = tmp
+MOC_DIR     = tmp
+OBJECTS_DIR = tmp
+RESOURCES     = DisplayQuran.qrc
+DESTDIR = "../ProgramQServer/aiml_set/Islamic Bot"

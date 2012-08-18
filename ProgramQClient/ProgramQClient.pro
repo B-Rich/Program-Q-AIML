@@ -1,0 +1,9 @@
+HEADERS      = include/*.h
+SOURCES      = src/*.cpp
+QT          += network
+INCLUDEPATH	+= . include
+DEPENDPATH  += include src
+CONFIG      += release console
+UI_DIR       = tmp
+MOC_DIR      = tmp
+OBJECTS_DIR  = tmp
