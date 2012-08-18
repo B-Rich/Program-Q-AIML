@@ -1,7 +1,8 @@
-<ui version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>Dialog</class>
- <widget class="QDialog" name="Dialog" >
-  <property name="geometry" >
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -9,83 +10,61 @@
     <height>467</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>Program "Q" AIML v1.2 by Houssem BDIOUI (houssem.bdioui@gmail.com)</string>
+  <property name="windowTitle">
+   <string>Program &quot;Q&quot; AIML #VERSION by Houssem BDIOUI (houssem.bdioui@gmail.com)</string>
   </property>
-  <property name="windowIcon" >
-   <iconset resource="../ProgramQ.qrc" >:/new/prefix1/img/programq.png</iconset>
+  <property name="windowIcon">
+   <iconset resource="../ProgramQ.qrc">
+    <normaloff>:/new/prefix1/img/programq.png</normaloff>:/new/prefix1/img/programq.png</iconset>
   </property>
-  <property name="sizeGripEnabled" >
+  <property name="sizeGripEnabled">
    <bool>true</bool>
   </property>
-  <property name="modal" >
+  <property name="modal">
    <bool>true</bool>
   </property>
-  <layout class="QGridLayout" >
-   <property name="leftMargin" >
+  <layout class="QGridLayout">
+   <property name="margin">
     <number>9</number>
    </property>
-   <property name="topMargin" >
-    <number>9</number>
-   </property>
-   <property name="rightMargin" >
-    <number>9</number>
-   </property>
-   <property name="bottomMargin" >
-    <number>9</number>
-   </property>
-   <property name="horizontalSpacing" >
+   <property name="spacing">
     <number>6</number>
    </property>
-   <property name="verticalSpacing" >
-    <number>6</number>
-   </property>
-   <item row="1" column="0" >
-    <widget class="QGroupBox" name="groupBox" >
-     <property name="title" >
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
       <string>User Input</string>
      </property>
-     <layout class="QGridLayout" >
-      <property name="leftMargin" >
+     <layout class="QGridLayout">
+      <property name="margin">
        <number>9</number>
       </property>
-      <property name="topMargin" >
-       <number>9</number>
-      </property>
-      <property name="rightMargin" >
-       <number>9</number>
-      </property>
-      <property name="bottomMargin" >
-       <number>9</number>
-      </property>
-      <property name="horizontalSpacing" >
+      <property name="spacing">
        <number>6</number>
       </property>
-      <property name="verticalSpacing" >
-       <number>6</number>
-      </property>
-      <item row="0" column="1" >
-       <widget class="QPushButton" name="pushButton1" >
-        <property name="enabled" >
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton1">
+        <property name="enabled">
          <bool>true</bool>
         </property>
-        <property name="sizePolicy" >
-         <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
-        <property name="text" >
+        <property name="text">
          <string/>
         </property>
-        <property name="icon" >
-         <iconset resource="../ProgramQ.qrc" >:/new/prefix1/img/button_ok.png</iconset>
+        <property name="icon">
+         <iconset resource="../ProgramQ.qrc">
+          <normaloff>:/new/prefix1/img/button_ok.png</normaloff>:/new/prefix1/img/button_ok.png</iconset>
         </property>
        </widget>
       </item>
-      <item row="0" column="0" >
-       <widget class="QComboBox" name="comboBox" >
-        <property name="editable" >
+      <item row="0" column="0">
+       <widget class="QComboBox" name="comboBox">
+        <property name="editable">
          <bool>true</bool>
         </property>
        </widget>
@@ -93,59 +72,47 @@
      </layout>
     </widget>
    </item>
-   <item row="0" column="0" >
-    <widget class="QFrame" name="frame" >
-     <property name="frameShape" >
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
-     <property name="frameShadow" >
+     <property name="frameShadow">
       <enum>QFrame::Plain</enum>
      </property>
-     <layout class="QGridLayout" >
-      <property name="leftMargin" >
+     <layout class="QGridLayout">
+      <property name="margin">
        <number>2</number>
       </property>
-      <property name="topMargin" >
-       <number>2</number>
-      </property>
-      <property name="rightMargin" >
-       <number>2</number>
-      </property>
-      <property name="bottomMargin" >
-       <number>2</number>
-      </property>
-      <property name="horizontalSpacing" >
+      <property name="spacing">
        <number>6</number>
       </property>
-      <property name="verticalSpacing" >
-       <number>6</number>
-      </property>
-      <item row="0" column="0" >
-       <widget class="QLabel" name="label" >
-        <property name="text" >
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
          <string> AIML set (click to change):</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="1" >
-       <widget class="ClickableLabel" name="AIMLSet" >
-        <property name="cursor" >
+      <item row="0" column="1">
+       <widget class="ClickableLabel" name="AIMLSet">
+        <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
-        <property name="toolTip" >
+        <property name="toolTip">
          <string>Click to change/reload AIML set</string>
         </property>
-        <property name="text" >
-         <string>&lt;a href="aiml_set">AIML&lt;/a></string>
+        <property name="text">
+         <string>&lt;a href=&quot;aiml_set&quot;&gt;AIML&lt;/a&gt;</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="2" >
+      <item row="0" column="2">
        <spacer>
-        <property name="orientation" >
+        <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <property name="sizeHint" >
+        <property name="sizeHint" stdset="0">
          <size>
           <width>591</width>
           <height>24</height>
@@ -156,39 +123,27 @@
      </layout>
     </widget>
    </item>
-   <item row="2" column="0" >
-    <widget class="QGroupBox" name="groupBox_2" >
-     <property name="title" >
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
       <string>Chat</string>
      </property>
-     <layout class="QGridLayout" >
-      <property name="leftMargin" >
+     <layout class="QGridLayout">
+      <property name="margin">
        <number>9</number>
       </property>
-      <property name="topMargin" >
-       <number>9</number>
-      </property>
-      <property name="rightMargin" >
-       <number>9</number>
-      </property>
-      <property name="bottomMargin" >
-       <number>9</number>
-      </property>
-      <property name="horizontalSpacing" >
+      <property name="spacing">
        <number>6</number>
       </property>
-      <property name="verticalSpacing" >
-       <number>6</number>
-      </property>
-      <item row="0" column="0" >
-       <widget class="QTextEdit" name="textEdit" >
-        <property name="enabled" >
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="textEdit">
+        <property name="enabled">
          <bool>true</bool>
         </property>
-        <property name="undoRedoEnabled" >
+        <property name="undoRedoEnabled">
          <bool>false</bool>
         </property>
-        <property name="readOnly" >
+        <property name="readOnly">
          <bool>true</bool>
         </property>
        </widget>
@@ -205,8 +160,13 @@
    <header>include/clickablelabel.h</header>
   </customwidget>
  </customwidgets>
+ <tabstops>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton1</tabstop>
+  <tabstop>textEdit</tabstop>
+ </tabstops>
  <resources>
-  <include location="../ProgramQ.qrc" />
+  <include location="../ProgramQ.qrc"/>
  </resources>
  <connections/>
 </ui>

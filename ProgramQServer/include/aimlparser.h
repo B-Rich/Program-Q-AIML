@@ -71,6 +71,7 @@ public:
     QString getResponse(QString, const bool & = false);
     void runRegression();
     bool startServer(uint);
+    QString getAIMLSetDirectory() const;
 private:
     bool loadSubstitutions(const QString&);
     bool loadVars(const QString&, const bool&);

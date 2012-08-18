@@ -30,6 +30,7 @@ MyMainDialog::MyMainDialog(AIMLParser *parser, const QString& aimlSet)
         : QDialog(0, Qt::Window), parser(parser), regexp("&lt;(/*)html:(.+)&gt;")
 {
     setupUi(this);
+    setWindowTitle(windowTitle().replace("#VERSION", VERSION));
     regexp.setMinimal(true);
     comboBox->setFocus();
     textEdit->setFocusPolicy(Qt::NoFocus);
@@ -52,7 +53,7 @@ void MyMainDialog::setAIMLSet(QString aimlSet)
     if (aimlSet.isEmpty())
     {
         //choose which aiml set to use!
-        QDir dir(currentPath + "/aiml_set");
+        QDir dir(parser->getAIMLSetDirectory());
         QStringList subdirs = dir.entryList(QDir::Dirs);
         subdirs.removeAll(".");
         subdirs.removeAll("..");
@@ -158,6 +159,6 @@ void MyMainDialog::validateInput()
     html.replace(regexp, "<\\1\\2>"),
     textEdit->insertHtml(html+"<br>");
     textEdit->ensureCursorVisible();
-    qWarning(qPrintable(html));
+    //qWarning(qPrintable(html));
     comboBox->clearEditText();
 }

@@ -282,6 +282,21 @@ bool AIMLParser::startServer(uint port)
     return true;
 }
 
+QString AIMLParser::getAIMLSetDirectory() const
+{
+    QStringList AIMLSetDirectories;
+    AIMLSetDirectories << currentPath << currentPath + "/..";
+    foreach (const QString& AIMLSetDirectory, AIMLSetDirectories)
+    {
+        QString dirname = AIMLSetDirectory + "/aiml_set";
+        if (QDir().exists(dirname))
+        {
+            return dirname;
+        }
+    }
+    return "";
+}
+
 void AIMLParser::newConnection()
 {
     QTcpSocket *clientConnection = tcpServer->nextPendingConnection();
@@ -330,7 +345,7 @@ void AIMLParser::readInput()
 
 bool AIMLParser::loadAIMLSet(const QString &aimlSet)
 {
-    QString dirname = currentPath + "/aiml_set/" + aimlSet;
+    QString dirname = getAIMLSetDirectory() + "/" + aimlSet;
     QDir dir(dirname, "*.aiml");
     if (!dir.exists())
     {

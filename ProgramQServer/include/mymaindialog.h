@@ -1,6 +1,6 @@
 /***************************************************************************
-			mymaindialog.h  -  description
-			-------------------
+            mymaindialog.h  -  description
+            -------------------
 begin                : lun sep 26 2005
 copyright            : (C) 2005 by houssem
 email                : houssem@localhost
@@ -23,6 +23,8 @@ email                : houssem@localhost
 /**
 *@author houssem bdioui
 */
+
+#define VERSION "2.2"
 
 class QProgressDialog;
 class AIMLParser;
