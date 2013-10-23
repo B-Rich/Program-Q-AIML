@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <aiml>
-	<category><pattern>&#1575;&#1606;&#1575; *</pattern><template><sr/></template></category>
-	<category><pattern>* &#1575;&#1606;&#1578;</pattern><template><sr/></template></category>
-	<category><pattern>&#1576;&#1575;&#1604;&#1601;&#1593;&#1604; *</pattern><template><sr/></template></category>
-	<category><pattern>&#1576;&#1575;&#1604;&#1591;&#1576;&#1593; *</pattern><template><sr/></template></category>
-	<category><pattern>&#1575; *</pattern><template><srai>&#1607;&#1604; <star/></srai></template></category>
-	<category><pattern>&#1605;&#1575; *</pattern><template><srai>&#1605;&#1575;&#1584;&#1575; <star/></srai></template></category>
+	<category><pattern>انا *</pattern><template><sr/></template></category>
+	<category><pattern>* انت</pattern><template><sr/></template></category>
+	<category><pattern>بالفعل *</pattern><template><sr/></template></category>
+	<category><pattern>بالطبع *</pattern><template><sr/></template></category>
+	<category><pattern>ا *</pattern><template><srai>هل <star/></srai></template></category>
+	<category><pattern>ما *</pattern><template><srai>ماذا <star/></srai></template></category>
 </aiml>
